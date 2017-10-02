@@ -11,7 +11,7 @@ import {
   Text,
   View
 } from 'react-native';
-import App from './App';
+import App from './app/App';
 
 export default class ethermineview extends Component {
   render() {
