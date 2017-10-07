@@ -5,17 +5,24 @@ import {
   StyleSheet,
   View
 } from 'react-native';
+import {observer, inject} from 'mobx-react';
 import { Container, Header, Tab, Tabs, Text } from 'native-base';
-import Dashboard from './dashboard/Dashboard';
-import Setting from './setting/Setting';
-import Payout from './payout/Payout';
+import Dashboard from './components/Dashboard';
+import Setting from './components/Setting';
+import Payout from './components/Payout';
 
+@inject('store') @observer
 export default class App extends Component {
+
+    componentWillMount() {
+      //this.props.store.getStatistic('');
+    }
+
     render() {
         return (
             <Container>
             <Header>
-              <Text style={{'marginTop': 10}}>Ethermine Viewer</Text>
+              <Text style={{'paddingTop': 5, fontSize: 20, fontWeight: 'bold'}}>{this.props.store.ZCASH_END_POINT}</Text>
             </Header>
             <Tabs>
               <Tab heading="Dashboard">
