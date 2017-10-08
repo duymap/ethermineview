@@ -12,7 +12,6 @@ class ApiStore {
             const response = await axios.get(requestURL);
             if (response.data.status === 'OK') {
                 this.data = response.data.data;
-                //console.log(this.data);
             }
         } catch (e) {
             Alert.alert('Connection error', 'Couldn\'t fetch the data.');

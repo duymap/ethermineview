@@ -15,7 +15,9 @@ import Payout from './components/Payout';
 export default class App extends Component {
 
     componentWillMount() {
-      //this.props.store.getStatistic('');
+      //TODO
+      const yourMiner = '';
+      this.props.store.getStatistic(yourMiner);
     }
 
     render() {

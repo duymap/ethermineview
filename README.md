@@ -1,5 +1,6 @@
 # Project Title
-Mining Mobile Viewer App - Good example for Reactnative + Mobx app
+- Mining Mobile Viewer App - Good example for Reactnative + Mobx app
+- Demo using api from https://api-zcash.flypool.org
 
 ### Installing
 
@@ -20,6 +21,11 @@ For android:
 ```
 cd <your-folder>
 react-native run-android
+```
+### Debug:
+```
+- After running 'react-native run-ios', on ios simulartor, press Command+D, select 'Debug JS Remotely'
+- Using console.log to print out data to debug. Probably you have the better way than me.
 ```
 
 ### Built with:
