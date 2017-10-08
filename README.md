@@ -1,5 +1,5 @@
 # Project Title
-Mining Mobile Viewer App
+Mining Mobile Viewer App - Good example for Reactnative + Mobx app
 
 ### Installing
 
@@ -21,3 +21,7 @@ For android:
 cd <your-folder>
 react-native run-android
 ```
+
+#Built with:
+[React-native](https://facebook.github.io/react-native/)
+[Mobx](https://github.com/mobxjs/mobx)
